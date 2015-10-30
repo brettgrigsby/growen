@@ -13,3 +13,72 @@
  *= require_tree .
  *= require_self
  */
+
+.content {
+    background: rgba(240, 248, 255, 0.6);
+    margin-left: 10px;
+    width: 800px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#nav-bar {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    padding-right: 0px;
+}
+
+#title {
+  text-align: left;
+  font-family: 'Poiret One', cursive;
+  background-image: url('/assets/eng-landscape.jpg');
+  width: 100%;
+  height: 1000px;
+}
+
+body {
+    font-size: 30px;
+    margin: 0 auto;
+    font-family: 'Poiret One', cursive;
+    vertical-align: top;
+}
+
+#nav-links {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.nav-text {
+    margin: 0;
+}
+
+#ring-pic {
+    width: 110%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.story-body {
+    text-align: right;
+    font-size: 22px;
+    font-family: "Indie Flower", sans-serif;
+}
+
+#story-container {
+    font-family: "Droid Sans", sans-serif;
+    color: white;
+    background-image: url(ring-pic.jpg);
+    background-size: 100%;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
