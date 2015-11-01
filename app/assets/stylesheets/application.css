@@ -14,12 +14,54 @@
  *= require_self
  */
 
+#accomodations-content {
+    height: 600px;
+}
+
+.hotel-info {
+    list-style: none;
+    margin-top: 0px;
+}
+
+.hotel-block {
+    text-align: center;
+}
+
+.hotel-name {
+    margin-bottom: 10px;
+}
+
+.hotel-link {
+    text-decoration: none;
+    color: black;
+}
+
+.hotel-link:hover {
+    color: red;
+}
+
+.hotel-pic {
+    height: 150px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid black;
+    float: left;
+    margin-left: 90px;
+}
+
 .content {
     background: rgba(240, 248, 255, 0.6);
-    margin-left: 10px;
+    margin-left: 30px;
+    height: 400px;
     width: 800px;
     padding: 10px;
     border-radius: 20px;
+    display: none;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 5px;
 }
 
 #nav-bar {
@@ -32,7 +74,7 @@
 #title {
   text-align: left;
   font-family: 'Poiret One', cursive;
-  background-image: url('/assets/eng-landscape.jpg');
+  background-image: url('/assets/background.jpg');
   width: 100%;
   height: 1000px;
 }
@@ -51,10 +93,6 @@ body {
 
 .nav-text {
     margin: 0;
-}
-
-#ring-pic {
-    width: 110%;
 }
 
 .nav-link {
@@ -81,4 +119,7 @@ body {
     margin: auto;
     padding: 10px;
     width: 80%;
+}
+
+#nav-bar {
 }
