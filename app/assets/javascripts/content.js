@@ -38,6 +38,19 @@ $(document).ready(function() {
 
   });
 
+  $("#faq").on("click", function() {
+    var $content =  $("#faq-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
 
 
 });
