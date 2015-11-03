@@ -25,6 +25,20 @@ $(document).ready(function() {
 
   });
 
+  $("#whenwhere").on("click", function() {
+    var $content =  $("#whenwhere-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
+
 
 });
 

@@ -1,7 +1,7 @@
 <div id="title">
 
   <p id="nav-links">
-    <a href="#" id="our-story" class="nav-link">our story</a> : <a href="#" id="accomodations" class="nav-link">accomodations</a> : <a href="#" class="nav-link">when & where</a> : <a href="#" class="nav-link">wedding party</a> : <a href="#" class="nav-link">registry</a> : <a href="#" class="nav-link">denver</a> : <a href="#" class="nav-link">faq</a>
+    <a href="#" id="our-story" class="nav-link">our story</a> : <a href="#" id="accomodations" class="nav-link">accomodations</a> : <a href="#" class="nav-link" id="whenwhere">when & where</a> : <a href="#" class="nav-link">wedding party</a> : <a href="#" class="nav-link">registry</a> : <a href="#" class="nav-link">denver</a> : <a href="#" class="nav-link">faq</a>
   </p>
 
 
@@ -13,32 +13,32 @@
 
   </div>
 
+  <div id="whenwhere-content" class="content">
+    <h2 class="content-title">The Manor House</h2>
+  </div>
+
   <div id="accomodations-content" class="content">
     <h2 class="content-title">The Digs</h2>
     
-    <a target="_blank" class="hotel-link" href="http://homewoodsuites3.hilton.com/en/hotels/colorado/homewood-suites-by-hilton-denver-littleton-DENLIHW/index.html">
-      <div class="hotel-block">
-        <%= image_tag("homewood.jpg", class: "hotel-pic") %>
-        <h3 class="hotel-name">Homewood Suites</h3>
-        <ul class="hotel-info">
-          <li>Nice Place</li>
-          <li>arcade room for the kids</li>
-          <li>great place to have some goat</li>
-        </ul>
-      </div>
-    </a>
+    <p class="description">We've reserved blocks of rooms in two hotels that are about a five-minute drive from the ceremony/reception venue and about a five-minute walk from the reception after-party location. Both hotels offer small shuttles to the venue, and Uber and taxis are available. We may add more shuttles depending on demand. Stay tuned! <strong>The hotels:</strong></p>
 
     <hr>
 
     <a target="_blank" class="hotel-link" href="http://homewoodsuites3.hilton.com/en/hotels/colorado/homewood-suites-by-hilton-denver-littleton-DENLIHW/index.html">
       <div class="hotel-block">
+        <%= image_tag("homewood.jpg", class: "hotel-pic") %>
+        <h3 class="hotel-name">Homewood Suites</h3>
+        <p class="description">Prices for the rooms in the wedding block are king studio suites (4 people) at $179 per night, king one bedroom suite (4) at $199 per night, double queen one bedroom suite (6) at $219, and 1 king with double queen two bedroom suite at $399 per night. Each room has a full kitchen. Breakfast is included along with a light supper with complimentary beer and wine during the evening on Monday-Thursday. The hotel has a heated pool and fitness center. You can reserve a room by calling 720-981-4763 and asking for the Owens/Grigsby wedding block or just click here. The wedding block rate is available from Aug. 11 through Aug. 14 and for additional nights by calling the hotel. </p>
+      </div>
+    </a>
+
+    <hr>
+
+    <a target="_blank" class="hotel-link" href="http://hamptoninn3.hilton.com/en/hotels/colorado/hampton-inn-and-suites-denver-littleton-DENLTHX/index.html">
+      <div class="hotel-block">
         <%= image_tag("hampton.jpg", class: "hotel-pic") %>
         <h3 class="hotel-name">Hampton Inn</h3>
-        <ul class="hotel-info">
-          <li>some stuff</li>
-          <li>some stuff</li>
-          <li>last thing</li>
-        </ul>
+        <p class="description">Prices for the rooms in the hotel block are $149 night for either a room with one king or a room with two queens. For an extra $20 (IS THIS PER NIGHT?), you can reserve a room with a wet bar and a fridge. Breakfast is included along with a complimentary light dinner with beer and wine Monday-Thursday evenings. There is an indoor pool and fitness center. You can reserve by XXXX. The wedding block rate is available from Aug. 10 to Aug. 15. </p>
       </div>
     </a>
   </div>
