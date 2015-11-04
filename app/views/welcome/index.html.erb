@@ -47,6 +47,29 @@
     <%= image_tag "manor-house.jpg", class: "manor-pic" %>
 
     <p class="description" style="text-align: center;">The Manor House</p>
+    <p class="description" style="text-align: center;"><a id="manor-link" target="_blank" href="https://www.google.com/maps/place/The+Manor+House/@39.5898474,-105.1685881,15z/data=!4m2!3m1!1s0x0:0x25315a25a5b4b300?sa=X&ved=0CIgBEPwSMA1qFQoTCNC09o3398gCFURZiAodd8IA1Q">1 Manor House Road Littleton, CO 80127</a></p>
+
+    <h4 class="day">Friday:</h4>
+
+    <ul class="schedule">
+      <li>9:00 pm - Wedding pre-party for all who are in town. Location TBD but near wedding hotels.</li>
+    </ul>
+
+    <h4 class="day">Saturday:</h4>
+
+    <ul class="schedule">
+      <li>5:00 pm - Ceremony at the Manor House, 1 Manor House Road in Littleton. (Note: There is plenty of parking at the venue, and you can leave cars overnight if necessary. More info on transportation can be found on the accommodations page.)</li>
+      <li>5:30 pm - Cocktail hour at the Manor House</li>
+      <li>6:30 pm - Dinner followed by dancing. Remain at the Manor House!</li>
+      <li>11:00 pm - Reception ends, and the after-party begins. We've reserved the upstairs of Rox Bar & Grill, 12684 W Indore Place in Littleton, from 11 p.m. to 2 a.m. for an after-party celebration. The bar is located a short walk from the wedding hotels and a short drive from the Manor House. So keep your party pants on, folks!</li>
+    </ul>
+
+    <h4 class="day">Sunday:</h4>
+
+    <ul class="schedule">
+      <li>Working on plans to say goodbye over breakfast. More when we have it!</li>
+    </ul>
+
   </div>
 
   <div id="accomodations-content" class="content">
@@ -56,23 +79,29 @@
 
     <hr>
 
-    <a target="_blank" class="hotel-link" href="http://homewoodsuites3.hilton.com/en/hotels/colorado/homewood-suites-by-hilton-denver-littleton-DENLIHW/index.html">
-      <div class="hotel-block">
-        <%= image_tag("homewood.jpg", class: "hotel-pic") %>
-        <h3 class="hotel-name">Homewood Suites</h3>
-        <p class="description">Prices for the rooms in the wedding block are king studio suites (4 people) at $179 per night, king one bedroom suite (4) at $199 per night, double queen one bedroom suite (6) at $219, and 1 king with double queen two bedroom suite at $399 per night. Each room has a full kitchen. Breakfast is included along with a light supper with complimentary beer and wine during the evening on Monday-Thursday. The hotel has a heated pool and fitness center. You can reserve a room by calling 720-981-4763 and asking for the Owens/Grigsby wedding block or just click here. The wedding block rate is available from Aug. 11 through Aug. 14 and for additional nights by calling the hotel. </p>
-      </div>
-    </a>
+    
+    <div class="hotel-block">
+      <%= image_tag("homewood.jpg", class: "hotel-pic") %>
+      <h3 class="hotel-name">Homewood Suites</h3>
+
+      <a target="_blank" class="hotel-link" href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/D/DENLIHW-OWG-20160811/index.jhtml?WT.mc_id=POG"><button class="book-button">book online</button></a>
+      
+      <p class="description">Prices for the rooms in the wedding block are king studio suites (4 people) at $179 per night, king one bedroom suite (4) at $199 per night, double queen one bedroom suite (6) at $219, and 1 king with double queen two bedroom suite at $399 per night. Each room has a full kitchen. Breakfast is included along with a light supper with complimentary beer and wine during the evening on Monday-Thursday. The hotel has a heated pool and fitness center. You can reserve a room by calling 720-981-4763 and asking for the Owens/Grigsby wedding block or just click <a target="_blank" class="hotel-link" href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/D/DENLIHW-OWG-20160811/index.jhtml?WT.mc_id=POG">HERE</a>. The wedding block rate is available from Aug. 11 through Aug. 14 and for additional nights by calling the hotel. Be sure to reserve by July 1st.</p>
+    </div>
 
     <hr>
 
-    <a target="_blank" class="hotel-link" href="http://hamptoninn3.hilton.com/en/hotels/colorado/hampton-inn-and-suites-denver-littleton-DENLTHX/index.html">
-      <div class="hotel-block">
-        <%= image_tag("hampton.jpg", class: "hotel-pic") %>
-        <h3 class="hotel-name">Hampton Inn</h3>
-        <p class="description">Prices for the rooms in the hotel block are $149 night for either a room with one king or a room with two queens. For an extra $20 (IS THIS PER NIGHT?), you can reserve a room with a wet bar and a fridge. Breakfast is included along with a complimentary light dinner with beer and wine Monday-Thursday evenings. There is an indoor pool and fitness center. You can reserve by XXXX. The wedding block rate is available from Aug. 10 to Aug. 15. </p>
-      </div>
-    </a>
+    
+    <div class="hotel-block">
+      <%= image_tag("hampton.jpg", class: "hotel-pic") %>
+      <h3 class="hotel-name">Hampton Inn</h3>
+
+     <a target="_blank" class="hotel-link" href="http://hamptoninn3.hilton.com/en/hotels/colorado/hampton-inn-and-suites-denver-littleton-DENLTHX/index.html"><button class="book-button">book online</button></a>
+
+      <p class="description" style="text-align: center;">Group Code: OGW</p>
+
+      <p class="description">Prices for the rooms in the hotel block are $149 night for either a room with one king or a room with two queens. For an extra $20 per night, you can reserve a room with a wet bar and a fridge. Breakfast is included along with a complimentary light dinner with beer and wine Monday-Thursday evenings. There is an indoor pool and fitness center. You can reserve by July 11th, . The wedding block rate is available from Aug. 10 to Aug. 15. Reservations can be booked by calling the hotel directly or by booking on-line <a target="_blank" class="hotel-link" href="http://hamptoninn3.hilton.com/en/hotels/colorado/hampton-inn-and-suites-denver-littleton-DENLTHX/index.html">HERE</a>.  After the dates are entered, "add special rate codes" should be selected and then the GROUP code OGW should be entered.</p>
+    </div>
   </div>
 
 </div>
