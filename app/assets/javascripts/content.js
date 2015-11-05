@@ -64,6 +64,10 @@ $(document).ready(function() {
 
   });
 
+  
+  $("#nav-bar").on("click", function() {
+    $(".content").hide();
+  });
 
 });
 
