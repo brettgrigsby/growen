@@ -51,6 +51,18 @@ $(document).ready(function() {
 
   });
 
+  $("#engagement-pics").on("click", function() {
+    var $content =  $("#engagement-pics-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
 
 
 });
