@@ -87,6 +87,14 @@ body {
     margin-right: 20px;
 }
 
+.link {
+    color: black;
+}
+
+.link:hover {
+    color: red;
+}
+
 #manor-link {
     color: black;
 }
@@ -143,7 +151,7 @@ body {
 
 .schedule {
     margin: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Alegreya', serif; 
 }
 

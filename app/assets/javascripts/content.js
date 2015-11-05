@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   });
 
-  $("#accomodations").on("click", function() {
+  $(".accomodations").on("click", function() {
     var $content =  $("#accomodations-content")
 
     if ($content.is(":visible")) {
