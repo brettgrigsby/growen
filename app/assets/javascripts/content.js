@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#our-story").on("click", function() {
-    var $content =  $("#welcome-content")
+    var $content =  $("#our-story-content")
 
     if ($content.is(":visible")) {
       $content.hide();
@@ -64,6 +64,44 @@ $(document).ready(function() {
 
   });
 
+  $("#wedding-party").on("click", function() {
+    var $content =  $("#wedding-party-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
+  $("#liz").on("click", function() {
+    var $content =  $("#liz-list")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".wp-list").hide();
+      $content.show();
+    }
+
+  });
+
+  $("#brett").on("click", function() {
+    var $content =  $("#brett-list")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".wp-list").hide();
+      $content.show();
+    }
+
+  });
   
   $("#nav-bar").on("click", function() {
     $(".content").hide();
