@@ -121,6 +121,10 @@ body {
     border: 3px solid black;
 }
 
+.mobile-nav-link {
+    display: none;
+}
+
 #nav-bar {
     width: 100%;
     text-align: left;
@@ -278,6 +282,7 @@ body {
     }
 
     .mobile-nav-link {
+        display: inline;
         text-align: center;
     }
 
