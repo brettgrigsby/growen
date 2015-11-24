@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#our-story").on("click", function() {
+  $(".our-story").on("click", function() {
     var $content =  $("#our-story-content")
 
     if ($content.is(":visible")) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   });
 
-  $("#whenwhere").on("click", function() {
+  $(".whenwhere").on("click", function() {
     var $content =  $("#whenwhere-content")
 
     if ($content.is(":visible")) {
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   });
 
-  $("#faq").on("click", function() {
+  $(".faq").on("click", function() {
     var $content =  $("#faq-content")
 
     if ($content.is(":visible")) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
 
   });
 
-  $("#engagement-pics").on("click", function() {
+  $(".engagement-pics").on("click", function() {
     var $content =  $("#engagement-pics-content")
 
     if ($content.is(":visible")) {
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   });
 
-  $("#wedding-party").on("click", function() {
+  $(".wedding-party").on("click", function() {
     var $content =  $("#wedding-party-content")
 
     if ($content.is(":visible")) {

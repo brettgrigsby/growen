@@ -239,3 +239,49 @@ body {
         
     }
 }
+
+@media all and (max-device-width: 750px) {
+
+    body {
+        font-size: 30px;
+    }
+
+    .content {
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    .description {
+        font-size: 30px;
+    }
+
+    .manor-pic {
+        width: 95%;
+    }
+
+    #title {
+        background-image: none;
+    }
+
+    #main-photo {
+        max-width: 98%;
+        
+    }
+
+    #nav-bar {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    .mobile-nav-link {
+        text-align: center;
+    }
+
+    .mobile-link-text {
+        font-size: 50px;
+    }                     
+}
