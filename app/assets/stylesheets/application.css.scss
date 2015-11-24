@@ -201,6 +201,7 @@ body {
 
 .wp-filter {
     text-decoration: none;
+    font-size: 30px;
 }
 
 .wp-filter:hover {
@@ -209,7 +210,6 @@ body {
 
 #wp-filters {
     color: black;
-    font-size: 24px;
 }
 
 .wp-list {
@@ -247,7 +247,7 @@ body {
 @media all and (max-device-width: 750px) {
 
     body {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .content {
@@ -260,7 +260,7 @@ body {
     }
 
     .description {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .hotel-name {
@@ -299,10 +299,22 @@ body {
     }                   
 
     .schedule {
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    #story-text {
+        font-size: 40px;
     }
 
     .wp-filter {
-        font-size: 70px;
+        font-size: 50px;
+    }
+
+    .wp-name {
+        font-size: 40px;
+    }
+
+    .wp-description {
+        font-size: 30px;
     }  
 }
