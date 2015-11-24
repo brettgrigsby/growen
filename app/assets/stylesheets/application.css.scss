@@ -251,6 +251,11 @@ body {
         font-family: 'Open Sans', sans-serif;
     }
 
+    .book-button {
+        height: 60px;
+        font-size: 40px;
+    }
+
     .content {
         margin-left: 2%;
         width: 96%;
@@ -285,7 +290,7 @@ body {
     }
 
     .hotel-name {
-        font-size: 45px;
+        font-size: 60px;
     }
 
     .hotel-pic {
@@ -294,6 +299,10 @@ body {
 
     .manor-pic {
         width: 95%;
+    }
+
+    #sally {
+        font-size: 25px;
     }
 
     #title {
