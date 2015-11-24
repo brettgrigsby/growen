@@ -218,3 +218,24 @@ body {
     margin-bottom: 5px;
     margin-top: 20px;
 }
+
+@media all and (max-width: 750px) {
+
+    .content {
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    .manor-pic {
+        width: 95%;
+    }
+
+    #title {
+        background-image: none;
+    }
+
+    #main-photo {
+        max-width: 98%;
+        
+    }
+}
