@@ -255,8 +255,16 @@ body {
         width: 96%;
     }
 
+    .day {
+        font-size: 45px;
+    }
+
     .description {
         font-size: 30px;
+    }
+
+    .hotel-name {
+        font-size: 45px;
     }
 
     .manor-pic {
@@ -288,5 +296,9 @@ body {
 
     .mobile-link-text {
         font-size: 50px;
-    }                     
+    }                   
+
+    .schedule {
+        font-size: 30px;
+    }  
 }
