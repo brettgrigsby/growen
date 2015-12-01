@@ -102,6 +102,19 @@ $(document).ready(function() {
     }
 
   });
+
+  $("#more").on("click", function() {
+    var $content =  $("#more-list")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".wp-list").hide();
+      $content.show();
+    }
+
+  });
   
   $("#nav-bar").on("click", function() {
     $(".content").hide();

@@ -125,6 +125,25 @@ body {
     display: none;
 }
 
+#more-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.more-cat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.more-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Alegreya', serif;
+}
+
 #nav-bar {
     width: 100%;
     text-align: left;
@@ -189,7 +208,6 @@ body {
 }
 
 #wedding-party-content {
-    text-align: center;
 }
 
 .wp-description {
@@ -210,6 +228,7 @@ body {
 
 #wp-filters {
     color: black;
+    text-align: center;
 }
 
 .wp-list {
@@ -332,6 +351,14 @@ body {
     .mobile-link-text {
         font-size: 80px;
     }                   
+
+    .more-cat {
+        font-size: 60px;
+    }
+
+    .more-name {
+        font-size: 42px;
+    }
 
     .schedule {
         font-size: 40px;
