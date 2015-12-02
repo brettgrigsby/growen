@@ -25,6 +25,20 @@ $(document).ready(function() {
 
   });
 
+
+  $(".transportation").on("click", function() {
+    var $content =  $("#transportation-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
   $(".whenwhere").on("click", function() {
     var $content =  $("#whenwhere-content")
 
