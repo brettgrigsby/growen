@@ -1,4 +1,17 @@
 $(document).ready(function() {
+  $(".rsvp").on("click", function() {
+    var $content =  $("#rsvp-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
   $(".our-story").on("click", function() {
     var $content =  $("#our-story-content")
 

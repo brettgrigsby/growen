@@ -60,6 +60,12 @@ body {
     margin: 0 auto;
 }
 
+#hashtag {
+    float: right;
+    padding-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .hotel-info {
     list-style: none;
     margin-top: 0px;
@@ -316,6 +322,10 @@ body {
 
     h5 {
         font-weight: normal;
+    }
+
+    #hashtag {
+        display: none;
     }
 
     .hotel-name {
