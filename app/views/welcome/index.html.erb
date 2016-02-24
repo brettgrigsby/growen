@@ -1,23 +1,35 @@
-<div id="nav-bar">
-  <span id="hashtag"><a href="https://twitter.com/intent/tweet?button_hashtag=loveisgrowen" class="nav-link" target="_blank">#loveisgrowen</a></span>
-  <h3 class="nav-text">Liz & Brett FOREVER</h3>
-</div>
-
-<div id="title">
-
-  <p id="nav-links">
-    <a href="#" class="nav-link rsvp">rsvp</a> : <a href="#" class="nav-link our-story">our story</a> : <a href="#" class="nav-link whenwhere">when & where</a> : <a href="#" class="nav-link accomodations">accommodations</a> : <a href="#" class="nav-link engagement-pics">engagement pics</a> : <a href="#" class="nav-link wedding-party">wedding party</a> : <a href="#" class="nav-link transportation">transportation</a>
-  </p>
-
-
-  <div class="mobile-nav-link">
-    <hr>
-    <a href="#" class="nav-link rsvp">
-      <div class="mobile-link-text">
-        rsvp
-      </div>
-    </a>
+<div class="container-fluid">
+  <div id="nav-bar" class="row">
+    <div class="col-xs-12 col-lg-8">
+      <h2 id="site-title">Liz & Brett FOREVER</h2>
+    </div>
+    <div class="col-xs-12 col-lg-4 text-right">
+      <a href="https://twitter.com/intent/tweet?button_hashtag=loveisgrowen" target="_blank">#loveisgrowen</a>
+    </div>
   </div>
+
+  <div id="title">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <p id="nav-links" class="center">
+          <a href="#" class="nav-link rsvp">rsvp</a> : <a href="#" class="nav-link our-story">our story</a> : <a href="#" class="nav-link whenwhere">when & where</a> : <a href="#" class="nav-link accomodations">accommodations</a> : <a href="#" class="nav-link engagement-pics">engagement pics</a> : <a href="#" class="nav-link wedding-party">wedding party</a> : <a href="#" class="nav-link transportation">transportation</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-lg-12 mobile-nav-link">
+        <hr>
+        <a href="#" class="nav-link rsvp">
+          <div class="mobile-link-text">
+            rsvp
+          </div>
+        </a>
+      </div>
+    </div>
 
 
   <div id="rsvp-content" class="content">
@@ -218,36 +230,99 @@
 
     <ul id="liz-list" class="wp-list">
       <li>
-        <h4 class="wp-name">Sara "Stark" Beaton</h4>
-        <p class="wp-description">High school friend. Queen of the dance floor. Fellow troublemaker.</p>
+        <div class="row">
+          <div class="col-sm-3">
+            <%= image_tag("stark.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+          <div class="col-sm-9">
+            <h4 class="wp-name">Sara "Stark" Beaton</h4>
+            <p class="wp-description">High school friend. Queen of the dance floor. Fellow troublemaker.</p>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Hannah Moulton Belec</h4>
-        <p class="wp-description">Grad school friend. Forever pen pal. Better half of the legendary #TeamHBandLizO. </p>
+        <div class="row">
+          <div class="col-sm-9">
+            <h4 class="wp-name">Hannah Moulton Belec</h4>
+            <p class="wp-description">Grad school friend. Forever pen pal. Better half of the legendary #TeamHBandLizO. </p>
+          </div>
+          <div class="col-sm-3">
+            <%= image_tag("hannah.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Alisa Chester</h4>
-        <p class="wp-description">Grad school friend. Party and cackling soulmate. Member of the original brunch crew. </p>
+        <div class="row">
+          <div class="col-sm-3">
+            <%= image_tag("alisa.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+          <div class="col-sm-9">
+            <h4 class="wp-name">Alisa Chester</h4>
+            <p class="wp-description">Grad school friend. Party and cackling soulmate. Member of the original brunch crew. </p>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Nikki Guillot</h4>
-        <p class="wp-description">College roomie. Crafty mofo. Source of thoughtfulness and delightful commentary. </p>
+        <div class="row">
+          <div class="col-sm-9">
+            <h4 class="wp-name">Nikki Guillot</h4>
+            <p class="wp-description">College roomie. Crafty mofo. Source of thoughtfulness and delightful commentary. </p>
+          </div>
+          <div class="col-sm-3">
+            <%= image_tag("nikki.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Tiffany Hartkemeyer</h4>
-        <p class="wp-description">Friends since she saw me in fifth grade and KNEW we would be best friends (I'm lucky). Keeper of all of my memories. We get better with age. </p>
+        <div class="row">
+          <div class="col-sm-3">
+            <%= image_tag("tiffany.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+          <div class="col-sm-9">
+            <h4 class="wp-name">Tiffany Hartkemeyer</h4>
+            <p class="wp-description">Friends since she saw me in fifth grade and KNEW we would be best friends (I'm lucky). Keeper of all of my memories. We get better with age. </p>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Cynthia Reynaud</h4>
-        <p class="wp-description">Friend from our Des Moines Register days. Co-creator of the downtown Des Moines bar scene. Now taking on summer 2016 weddings together. <3  </p>
+        <div class="row">
+          <div class="col-sm-9">
+            <h4 class="wp-name">Cynthia Reynaud</h4>
+            <p class="wp-description">Friend from our Des Moines Register days. Co-creator of the downtown Des Moines bar scene. Now taking on summer 2016 weddings together. <3</p>
+          </div>
+          <div class="col-sm-3">
+            <%= image_tag("cynthia.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Jessica Schuttler</h4>
-        <p class="wp-description">Lady of honor. College roomie. Dispenser of life wisdom. Expert pizza orderer. </p>
+        <div class="row">
+          <div class="col-sm-3">
+            <%= image_tag("jessica.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+          <div class="col-sm-9">
+            <h4 class="wp-name">Jessica Schuttler</h4>
+            <p class="wp-description">Lady of honor. College roomie. Dispenser of life wisdom. Expert pizza orderer. </p>
+          </div>
+        </div>
       </li>
+      <hr>
       <li>
-        <h4 class="wp-name">Tanner Stransky</h4>
-        <p class="wp-description">Best man. College roomie. Inventor of EVERYTHING. My person. </p>
+        <div class="row">
+          <div class="col-sm-9">
+            <h4 class="wp-name">Tanner Stransky</h4>
+            <p class="wp-description">Best man. College roomie. Inventor of EVERYTHING. My person. </p>
+          </div>
+          <div class="col-sm-3">
+            <%= image_tag("tanner.jpg", class: "img-rounded img-responsive peep-pic") %>
+          </div>
+        </div>
       </li>
     </ul>
 
@@ -349,4 +424,5 @@
       </li>
     </ul>
   </div>
+</div>
 </div>

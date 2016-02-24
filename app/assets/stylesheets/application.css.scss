@@ -10,9 +10,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "bootstrap";
 
 .answer {
     font-family: 'Alegreya', serif;
@@ -21,9 +21,21 @@
 
 body {
     font-size: 30px;
-    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    vertical-align: top;
+}
+
+body {
+/*css for full size background image*/
+  background: asset_url('background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  background-color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+ 
 }
 
 .book-button {
@@ -32,7 +44,7 @@ body {
 }
 
 .content {
-    background: rgba(240, 248, 255, 0.6);
+    background: rgba(255, 255, 255, 0.9);
     margin-left: 30px;
     width: 880px;
     padding: 10px;
@@ -154,10 +166,8 @@ body {
 }
 
 #nav-bar {
-    width: 100%;
-    text-align: left;
     padding: 10px;
-    padding-right: 0px;
+    background: rgba(255, 255, 255, 0.4)
 }
 
 #nav-links {
@@ -175,12 +185,17 @@ body {
     color: red;
 }
 
-.nav-text {
-    margin: 0;
+.peep-pic {
+    height: 100px;
 }
 
 .question {
     font-size: 24px;
+    margin-bottom: 0;
+}
+
+#site-title {
+    margin-top: 3px;
     margin-bottom: 0;
 }
 
@@ -196,11 +211,7 @@ body {
 }
 
 #title {
-  text-align: left;
   font-family: 'Open Sans', sans-serif;
-  background-image: asset_url('background.jpg');
-  background-repeat: no-repeat;
-  width: 100%;
   height: 1000px;
 }
 
@@ -273,10 +284,6 @@ body {
         width: 95%;
     }
 
-    #title {
-        background-image: none;
-    }
-
     #main-photo {
         max-width: 98%;
         
@@ -328,10 +335,6 @@ body {
         font-weight: normal;
     }
 
-    #hashtag {
-        display: none;
-    }
-
     .hotel-name {
         font-size: 60px;
     }
@@ -349,7 +352,6 @@ body {
     }
 
     #title {
-        background-image: none;
         font-family: 'Open Sans', sans-serif;    
     }
 
@@ -359,8 +361,7 @@ body {
     }
 
     #nav-bar {
-        text-align: center;
-        font-size: 85px;
+        font-size: 60px;
     }
 
     #nav-links {
@@ -369,7 +370,6 @@ body {
 
     .mobile-nav-link {
         display: inline;
-        text-align: center;
     }
 
     .mobile-link-text {
@@ -386,6 +386,10 @@ body {
 
     .schedule {
         font-size: 40px;
+    }
+
+    #site-title {
+        font-size: 80px;
     }
 
     #story-text {
