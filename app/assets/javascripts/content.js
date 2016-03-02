@@ -52,6 +52,19 @@ $(document).ready(function() {
 
   });
 
+  $(".todo").on("click", function() {
+    var $content =  $("#todo-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
   $(".whenwhere").on("click", function() {
     var $content =  $("#whenwhere-content")
 
