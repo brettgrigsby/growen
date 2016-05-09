@@ -5,8 +5,7 @@
       <div class="row">
         <div class="col-sm-12" style="text-align: center;">
           <h1>Your RSVP</h1>
-          <h4>Once you've clicked on your choices you're all done</h4>
-          <h4>You can head back to the main page <%= link_to 'HERE', root_url %>.
+          <h4>Once you've clicked on your choices, you're all done. There is no submit button. You can head back to the main page <%= link_to 'HERE', root_url %> when you're done.</h4>
         </div>
       </div>
       <hr>
@@ -23,6 +22,7 @@
           <div class="secondary-choices hidden">
             <br>
             <h4>Will they attend any of the other events?</h4>
+            <p class="song">Both events will be hosted at the Hampton Inn. Welcome drinks will be Friday from 8pm - 10pm. Breakfast will be Sunday from 9am - 10am. You can get more info in the 'When and Where' section of our site.</p>
             <div class="row btn-group">
               <% guest.event_choices.each do |event| %>
               <button class="btn btn-secondary event-btn" data-id="<%= @rsvp.id %>" data-guest-id="<%= guest.id %>" data-event="<%= event %>"><%= event %></button>
