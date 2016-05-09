@@ -104,6 +104,19 @@ $(document).ready(function() {
 
   });
 
+  $(".registry").on("click", function() {
+    var $content =  $("#registry-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".content").hide();
+      $content.show();
+    }
+
+  });
+
   $(".wedding-party").on("click", function() {
     var $content =  $("#wedding-party-content")
 
