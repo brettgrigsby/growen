@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div id="rsvp-edit-panel" class="col-md-8">
+      <div class="row">
+        <div class="col-sm-12" style="text-align: center;">
+          <h1>Your RSVP</h1>
+          <h4>Once you've clicked on your choices you're all done</h4>
+          <h4>You can head back to the main page <%= link_to 'HERE', root_url %>.
+        </div>
+      </div>
+      <hr>
+      <% @rsvp.guests.each do |guest| %>
+        <div class="row">
+          <h1><%= guest.name %></h1>
+        </div>
+        <div>
+          <div class="row btn-group">
+            <% guest.ceremony_choices.each do |choice| %>          
+            <button class="btn btn-secondary ceremony-btn" data-id="<%= @rsvp.id %>" data-guest-id="<%= guest.id %>" data-choice="<%= choice %>"><%= choice %></button>
+            <% end %>
+          </div>
+          <div class="secondary-choices hidden">
+            <br>
+            <h4>Will they attend any of the other events?</h4>
+            <div class="row btn-group">
+              <% guest.event_choices.each do |event| %>
+              <button class="btn btn-secondary event-btn" data-id="<%= @rsvp.id %>" data-guest-id="<%= guest.id %>" data-event="<%= event %>"><%= event %></button>
+              <% end %>
+            </div>
+            <br>
+            <br>
+            <h4>What would they like to eat at the reception?</h4>
+            <div class="row">
+              <% guest.meal_choices.each do |meal| %>
+              <button class="btn btn-secondary meal-btn" data-id="<%= @rsvp.id %>" data-guest-id="<%= guest.id %>" data-meal="<%= meal %>"><%= meal %></button>
+              <% end %>
+            </div>
+            <div class="allergies">
+              <label class="song">
+                <input type="checkbox" class="allergy-checkbox">
+                this guest has a food allergy
+              </label>
+              <form class="allergy-form" class="song">
+                <input type="text" class="allergy-text song" placeholder="name any and all allergies">
+                <input type="submit" class="song allergy-submit" value="Update Allergies" data-guest-id="<%= guest.id %>" data-id="@rsvp.id">
+            </div>
+
+            <br>
+            <h4>Optional: What song would they like to hear at the reception? (1 per guest)</h4>
+            <form>
+              <label class="song">
+                Song Title
+                <input type="text" class="song-title">
+              </label>
+              <label class="song">
+                Artist's Name
+                <input type="text" class="song-artist">
+              </label>
+              <input type="submit" value="Add Song" class="song song-submit" data-id="<%= @rsvp.id %>" data-guest-id="<%= guest.id %>">
+            </form>
+          </div>
+        </div>
+        <hr>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,21 @@
-<h1>Yo dawg</h1>
+<div class="rsvp col-md-8">
+  <% @rsvp.guests.each do |guest| %>
+    <div class="col-md-6">
+      <div class="guest">
+        <h3><%= guest.name %></h3>
+        <h4><%= guest.meal_choice %></h4>
+        <button class="btn <%= guest.welcome_class %>">welcome drinks</button><br>
+        <button class="btn <%= guest.wedding_class %>">wedding</button><br>
+        <button class="btn <%= guest.brunch_class %>">brunch</button>
+      </div>
+    </div>
+  <% end %>
+</div>
 
-<% @rsvp.guests.each do %>
-
-<h2><%= guest.name %></h2>
-
-<% end %>
+<div class="col-md-4 text-right guest">
+  <% if @rsvp.submitted %>
+  <h2>SUBMITTED</h2>
+  <% else %>
+  <h2>NOT SUBMITTED</h2>
+  <% end %>
+</div>

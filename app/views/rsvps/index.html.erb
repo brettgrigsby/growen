@@ -1,0 +1,27 @@
+<div>
+  <h1>Da RSVPs</h1>
+</div>
+
+<div id="admin-links">
+  <ul>
+    <li>
+      <a href="">guest counts</a>
+      <a href="">food choices</a>
+      <a href=""></a>
+    </li>
+  </ul>
+</div>
+
+<% @rsvps.each do |rsvp|%>
+  <a href="<%= rsvp_path(rsvp) %>">
+  <div class="rsvp-panel col-md-3">
+    <div class="guest index-guest text-center">
+      <% rsvp.guests.each do |guest| %>
+      <div>
+        <p class="rsvp-name"><%= guest.name %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  </a>
+<% end %>

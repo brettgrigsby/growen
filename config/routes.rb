@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  resources :rsvps
+  resources :rsvps, only: [:index, :show, :edit, :update]
+  resources :guests
+  get 'find-rsvp/:name' => 'rsvps#find'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
