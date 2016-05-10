@@ -22,7 +22,7 @@ class Guest < ActiveRecord::Base
   end
 
   def meal_choices
-    ["Chicken w/ Sun Dried Tomatoes", "Beef Tenderloin", "Vegetarian - Portobello Mushroom Lasagna", "Vegan - Stuffed Pepper", "Kid's - Chicken Tenders w/ Mac & Cheese"]
+    ["Chicken w/ Sun Dried Tomatoes", "Beef Tenderloin", "Vegan - Stuffed Pepper", "Kid's - Chicken Tenders w/ Mac & Cheese"]
   end
 
   def toggle_wd
