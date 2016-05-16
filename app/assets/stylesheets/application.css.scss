@@ -261,7 +261,12 @@ body {
 
 .selected {
     background-color: #80ffbf;
+    &:hover {
+        background-color: #80ffbf;
+    }
 }
+
+
 
 .unselected {
     background-color: grey;
