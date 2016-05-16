@@ -3,7 +3,15 @@
     <div class="col-md-6">
       <div class="guest">
         <h3><%= guest.name %></h3>
-        <h4><%= guest.meal_choice %></h4>
+        <hr>
+        <h4>Meal: <%= guest.meal_choice %></h4>
+        <% if guest.allergy %>
+        <h4>Allergies: <%= guest.allergies %></h4>
+        <% end %>
+        <% if guest.song_title %>
+        <h4>Song: <%= guest.song_artist %> - <%= guest.song_title %></h4>
+        <% end %>
+        <hr>
         <button class="btn <%= guest.welcome_class %>">welcome drinks</button><br>
         <button class="btn <%= guest.wedding_class %>">wedding</button><br>
         <button class="btn <%= guest.brunch_class %>">brunch</button>
@@ -13,7 +21,7 @@
 </div>
 
 <div class="col-md-4 text-right guest">
-  <% if @rsvp.submitted %>
+  <% if @rsvp.status == "submitted" %>
   <h2>SUBMITTED</h2>
   <% else %>
   <h2>NOT SUBMITTED</h2>

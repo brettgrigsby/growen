@@ -32,4 +32,8 @@ class Guest < ActiveRecord::Base
   def toggle_sb
     update_attributes(brunch: !brunch)
   end
+
+  def allergies
+    allergy || "none"
+  end
 end
