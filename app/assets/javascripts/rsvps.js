@@ -112,8 +112,11 @@ $(document).ready(function() {
       type: "GET",
       url: "/find-rsvp/" + name,
       success: function(response) {
-        console.log(response);
-        window.location.href = "/rsvps/" + response.id + "/edit"
+        if (response.message && response.message == "admin") {
+          window.location.href = "/rsvps";
+        } else {
+          window.location.href = "/rsvps/" + response.id + "/edit";
+        }
       },
       error: function() {
         alert("No RSVP with that name. Make sure you spelled your name correctly.");

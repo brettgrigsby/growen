@@ -1,21 +1,27 @@
 class RsvpsController < ApplicationController
+
+  before_action :load_rsvp, only: [:show, :edit]
+  before_action :check_user, only: [:edit]
+  before_action :check_admin, only: [:index, :show]
+
   def index
     @rsvps = Rsvp.all
   end
 
   def show
-    @rsvp = Rsvp.find(params[:id])
   end
 
   def edit
-    @rsvp = Rsvp.find(params[:id])
   end
 
   def find
     name = params[:name]
+    session[:guest_name] = name
     guest = Guest.all.find_all {|guest| guest.name.downcase == name.downcase}
     if guest.first
       render json: {id: guest.first.rsvp.id}, status: :ok
+    elsif name == "BrettIsCool"
+      render json: {message: "admin" }
     else
       render json: {message: "could not find rsvp"}, status: 404
     end
@@ -62,5 +68,19 @@ class RsvpsController < ApplicationController
     else
       false
     end
+  end
+
+  def load_rsvp
+    @rsvp = Rsvp.where(id: params[:id]).first
+    redirect_to root_path unless @rsvp
+  end
+
+  def check_user
+    names = @rsvp.guests.map(&:name).map(&:downcase)
+    redirect_to root_path unless names.include?(session[:guest_name].downcase)
+  end
+
+  def check_admin
+    redirect_to root_path unless session[:guest_name] == "BrettIsCool"
   end
 end
