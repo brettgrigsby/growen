@@ -6,6 +6,10 @@ class RsvpsController < ApplicationController
 
   def index
     @rsvps = Rsvp.all
+    @attending = Guest.where(wedding: true).count
+    @declined = Guest.where(wedding: false).count
+    @drinks = Guest.where(welcome_drinks: true).count
+    @breakfast = Guest.where(brunch: true).count
   end
 
   def show
