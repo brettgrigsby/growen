@@ -156,6 +156,32 @@ $(document).ready(function() {
 
   });
 
+  $("#wedding-trans").on("click", function() {
+    var $content =  $("#wedding-trans-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".t-list").hide();
+      $content.show();
+    }
+
+  });
+
+  $("#airport-trans").on("click", function() {
+    var $content =  $("#airport-trans-content")
+
+    if ($content.is(":visible")) {
+      $content.hide();
+    }
+    else {
+      $(".t-list").hide();
+      $content.show();
+    }
+
+  });
+
   $("#more").on("click", function() {
     var $content =  $("#more-list")
 

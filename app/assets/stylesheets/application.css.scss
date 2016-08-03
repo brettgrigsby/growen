@@ -300,6 +300,14 @@ body {
     background-color: grey;
 }
 
+#t-filters {
+  text-align: center;
+}
+
+.t-list {
+  display: none;
+}
+
 #title {
   font-family: 'Open Sans', sans-serif;
   height: 1000px;
@@ -329,6 +337,10 @@ body {
 }
 
 #wedding-party-content {
+}
+
+.wed-trans {
+  text-align: center;
 }
 
 .wp-description {
